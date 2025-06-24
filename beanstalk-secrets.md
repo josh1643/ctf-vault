@@ -61,6 +61,7 @@ Ran pacu, imported keys, and ran the elasticbeanstalk__enum module and found:
         }
     ],
 ```
+### Enumeration 2nd Profile
 From there, I configured a new aws profile with the given access key and secret access key and verified my profile
 
 ```bash
@@ -88,6 +89,7 @@ Permissions": {
       "iam:ListGroups"
     ],
 ```
+### Privesc 2nd Profile
 
 From there I ran ```run iam__privesc_scan --scan-only``` on pacu and it revealed we can privilege escalate through CreateAccessKey
 
